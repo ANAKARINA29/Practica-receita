@@ -1,75 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- TITULO DE PAGINA-->
+    <title>Blog de Recetas de Cocina</title>
 
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        <title> Nakaric Cakes </title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<link rel="stylesheet" href="main.css">      
-<!--Fuentes-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Fredericka+the+Great&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+     crossorigin="anonymous">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Fredericka+the+Great&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700;1,900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
     rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Fredericka+the+Great&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Fredericka+the+Great&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700;1,900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
     rel="stylesheet">
 
+  </head>
 
-
-
-    </head>
+<body>
 
 
 <body>
-  <img src="https://i.pinimg.com/736x/66/03/f4/6603f42165776f19c046e59e6c7332d4.jpg" width="883" height="374" />
+  <!--CABEÇALHO-->
+  <header>  
+    <div class="titulo_principal">
+    <h1>Nakaric Cakes</h1> </div>
 
-  <p>
-  <h1 class="titulo1"> Bolo de Baunilha </h1>
+    <div class="titulo_secundario">
+    <h2> Meu blog de receitas </h2> </div>
 
-  <p class="Autor">Autor: Ana Castillo</p>
+ 
+  </header>
 
-  <p class="conteudo"> Vem hoje a aprender a fazer um delicioso bolo de baunilha com uma massa muito fofinha que voce vai amar, ótima para fazer bolos de andar, para o lanche ou qualquer momento, surpreenda-se com o resultado, simple e delicioso!</p>
+  <!--BARRA DE NAVEGACION-->
+<div class="barra">
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Receitas</a>
+    <a href="#">Contacto</a>
+  </nav>
+</div>
 
-  <hr class="line">
-  <p class="pre">Preparo: 50 minutos</p>
-  <p class="pre">Porçoes: 10</p>
+<!--RECETA PRINCIPAL-->
+  <main>
+    <section class="container-receta_principal">
+    <div class="receita">
+        <h3>Bolo de Baunilha</h3>
+        <img src="https://receidelicia.com.br/wp-content/uploads/2021/04/bolo-de-baunilha-glaceado-21614-1024x666.jpg" 
+        alt="Imagen de la receta" width="400px" class="foto_receta1"> 
+
+        <h4> Ingredientes:</h4>
+        <ul>
+        <li> 3 xícaras de farinha de trigo. </li>
+        <li>3 ovos grandes </li>
+        <li> 1/2 xícara de óleo</li>
+          
+          <li> 1 colher (chá) de essência de baunilha</li>
+          <li>2 xícaras de açúcar </li>
+          <li>250 ml de leite </li>
+          <li> 1 colher (sobremesa) de fermento em pó</li>
+        </ul>
+      <hr>
+          <h4> Modo de Preparo: </h4>
+         <ol> 
+          <li>Numa batedeira, bata os ovos até ficarem bem clarinhos.</li> 
+          <li>Adicione o óleo sem parar de bater. </li>
+          <li>Coloque o açúcar de uma só vez e continue batendo.</li>
+          <li>Adicione a baunilha.</li>
+          <li>Aos poucos despeje o trigo e o leite. </li>
+          <li> Depois de bem batido, adicione o fermento e misture só por alguns segundos, pois, 
+            se bater muito depois de colocar o fermento o bolo não crescerá. </li>
+          <li> Despeje a mistura em uma forma média, untada com margarina e trigo.</li>
+          <li> Asse em forno médio, por aproximadamente 40 minutos, ou até dourar.</li>
+
+        </li>
+
   <hr>
-  <h2 class="titulo"> Ingredientes </h2>
-  <ul class="conteudo">
+  <h4>Video da receita</h4>
 
-    <li> 360 gr. Farinha de trigo. </li>
-    <li> 340 gr. Açucar refinado. </li>
-    <li> 6 Ovos meios ou 5 ovos grandes. </li>
-    <li> 250 ml. leite morna. </li>
-    <li> 1 colher de fermento.</li>
-
-  </Ul>
-  <hr class="line">
-  <h2 class="titulo">Modo de preparo</h2>
-
-  <p>
-
-  <ol class="conteudo">
-    <li> Pré-aqueça o forno a 180°C (forno médio).</li>
-    <li> Coloque na batedeira os ovos junto com a açucar e coloque na velocidade meia por 10 minutos.</li>
-    <li> A mezcla anterior vamos a acrescentar a farinha a os poucos, alternando com a leite morna.</li>
-    <li> Coloque numa forma redonda de 20x10 com papel manteiga no fundo. </li>
-    <li> Leve para assar a 180°C por aproximadamente 40 minutos, ou até ficar dourado e firme.
-      Faça o teste do palito a partir dos 40 minutos, ele deve sair limpo.</li>
-    </li>
-
-  </ol>
-  <hr>
-  <p class="titulo"> Video da receita</p>
-
-  <iframe class="vide" width="560" height="315" src="https://www.youtube.com/embed/jfIftVo1CMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jfIftVo1CMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </p>
   <hr>
-  <p class="visite"> Visite a <a class="web" href="https://www.facebook.com/nakaric.cakes" target="_blank" rel="noopener">Nakaric Cakes no facebook</a>
+  <p>Visite a <a class="web" href="https://www.facebook.com/nakaric.cakes" target="_blank" rel="noopener">Nakaric Cakes no facebook</a>
   </p>
+</div>
+    </section>
+  </main>
+ 
+    <!--OTRAS RECEITAS-->
+    <span>
+      <h2 class="titulo_secundario medio">Outras receitas</h2></span>
+
+    <!--RECETA 1-->
+    <section class="container-articulos">
+      <div>
+      <article>
+        <h3>Bolo de Chocolate</h3>
+        <img src="https://www.receitinhascaseiras.com.br/wp-content/uploads/2023/03/Bolo-de-chocolate-cremoso-_1_-1-1200x800.webp" 
+      width="200px" class="foto_receta"
+       alt="Imagen de la receta">
+
+      </article>
+      </div>
+      
+      <!--RECETA 2-->
+  <div>
+      <article>
+        <h3>Bolo de Cenoura</h3>
+        <img src="https://imagem.band.com.br/novahome/055caa6d-7528-44bc-ac32-3add84bdc0b0.jpg" 
+      width="200px" 
+   class="foto_receta"   
+      alt="Imagen de la receta">
+       
+      </article>
+  </div>
+
+      <!--RECETA 3-->
+<div>
+      <article>
+        <h3>Bolo de Laranja</h3>
+        <img src="https://p2.trrsf.com/image/fget/cf/942/530/images.terra.com/2023/05/02/bolo-laranja-ursdzhu7qmur.jpg" 
+      width="200px"  class="foto_receta"  alt="Imagen de la receta">
+   
+      </article>
+      </div>
+    
+    </section>
+
+
+<div>
+  <footer>
+    <p>Creado por Ana Karina &copy; 2023 Nakaric cakes</p>
+  </footer>
+</div>
+
+
+</body>
+</html>
